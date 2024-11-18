@@ -1,11 +1,11 @@
-Todos API
+# Todos API
 
 This repository contains a simple CRUD API built with Node.js and Express, extended with additional functionalities as per the assignment requirements.
 File Structure
 
     index.js: Main server file containing the API implementation.
 
-Assignment Deliverables
+## Assignment Deliverables
 
 This repository fulfills the assignment requirements to extend the Todos API by implementing the following functionalities:
 Question 1: Add a "Priority" Field to the To-Do API
@@ -14,11 +14,11 @@ Objective: Include a priority field in each to-do item, with support for adding 
 
 Steps Implemented:
 
-    POST /todos:
+ POST /todos:
         Accepts a priority field in the request body (valid values: "high", "medium", "low").
         Defaults to "medium" if no priority is specified.
 
-    GET /todos:
+ GET /todos:
         Now includes the priority field in the response for all to-do items.
 
 Example Usage:
@@ -56,7 +56,7 @@ Objective: Add filtering support to the GET /todos endpoint based on the complet
 
 Steps Implemented:
 
-    GET /todos?completed=true/false:
+ GET /todos?completed=true/false:
         Accepts an optional query parameter completed (boolean as "true" or "false").
         Filters the to-do items based on their completed status if the query parameter is provided.
         Returns the full list of to-do items if the parameter is not provided.
@@ -71,7 +71,7 @@ Retrieve only uncompleted to-do items:
 
     curl http://localhost:3000/todos?completed=false
 
-How to Run the API
+## How to Run the API
 
     Clone the Repository:
 
@@ -80,21 +80,20 @@ cd <repo-name>
 
 Install Dependencies:
 
-npm install
+    npm install
 
 Start the Server:
 
     npm start
+Test the Endpoints: Use curl commands or any REST client (e.g., Postman) to test the API endpoints as described above.
 
-    Test the Endpoints: Use curl commands or any REST client (e.g., Postman) to test the API endpoints as described above.
+## Testing Instructions
 
-Testing Instructions
+ Ensure the server is running on http://localhost:3000.
+ Use the provided curl commands or a browser to interact with the endpoints.
+Test all functionalities, including adding, retrieving, updating, deleting, marking all as completed, and filtering to-do items.
 
-    Ensure the server is running on http://localhost:3000.
-    Use the provided curl commands or a browser to interact with the endpoints.
-    Test all functionalities, including adding, retrieving, updating, deleting, marking all as completed, and filtering to-do items.
+## Deliverable
 
-Deliverable
-
-    A PDF file with a link to this GitHub repository has been submitted to Canvas.
-    All code changes are in the index.js file in this repository.
+A PDF file with a link to this GitHub repository has been submitted to Canvas.
+All code changes are in the index.js file in this repository.
